@@ -1,0 +1,12 @@
+.canvas-container{
+    position: relative;
+    min-width: 500px;
+}
+canvas{
+    position: absolute;
+    border: 1px solid black;
+}
+button{
+    padding: 5px;
+    margin-top: 10px;
+}

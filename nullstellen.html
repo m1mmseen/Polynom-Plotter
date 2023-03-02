@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Nullstellen quadratischer Polynome</title>
+
+</head>
+<body>
+    <div class="user-interface">
+        <h1>Nullstellen quadratischer Polynome</h1>
+        <p>Dieses Programm berechnet Nullstellen quadratischer Polynome der Form ax<sup>2</sup> + bx + c und stellt die Lösung im Intervall x &isin; [-10, 10] grafisch dar. </p>
+        <div id="input_section">
+            <label for="var_a">a: </label>
+            <input type="number" name="var_a" id="var_a" autofocus> 
+            <label for="var_b">b: </label>
+            <input type="number" name="var_b" id="var_b"> 
+            <label for="var_c">c: </label>
+            <input type="number" name="var_c" id="var_c">
+        </div>
+            <button type="button" onclick="clickManager()">Nullstellen berechnen</button>
+    </div>
+    
+    <div id="zero_result" style="display: inline;">
+        <p id="result_text"> <br></p>
+    </div>
+    
+    <div class="canvas-container">
+        <canvas id="ksystem" width="500" height="500"></canvas>
+        <canvas id="polynom" width="500" height="500"></canvas>
+        <canvas id="nullstellen" width="500" height="500"></canvas>
+    </div>
+    <script src="functions.js"></script>
+
+</body>
+</html>
